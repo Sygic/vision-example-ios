@@ -17,20 +17,20 @@
 		64AFCCBC299B87EB0085CF80 /* RoadLanes.m in Sources */ = {isa = PBXBuildFile; fileRef = 64AFCCBA299B87EA0085CF80 /* RoadLanes.m */; };
 		64AFCCBF299B8E330085CF80 /* CarDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = 64AFCCBE299B8E330085CF80 /* CarDistance.m */; };
 		64AFCCC2299BB0120085CF80 /* TailgatingWarning.m in Sources */ = {isa = PBXBuildFile; fileRef = 64AFCCC0299BB0120085CF80 /* TailgatingWarning.m */; };
-		64EB2A31293E03B200106C5D /* VisionLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64EB2A30293E03B200106C5D /* VisionLib.xcframework */; };
-		64EB2A32293E03B200106C5D /* VisionLib.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 64EB2A30293E03B200106C5D /* VisionLib.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		64AFCCC4299BE4030085CF80 /* VisionLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64AFCCC3299BE4020085CF80 /* VisionLib.xcframework */; };
+		64AFCCC5299BE4030085CF80 /* VisionLib.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 64AFCCC3299BE4020085CF80 /* VisionLib.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		64EB2A36293E060900106C5D /* LicensePlates.m in Sources */ = {isa = PBXBuildFile; fileRef = 64EB2A35293E060900106C5D /* LicensePlates.m */; };
 		64EB2A39293E0D2100106C5D /* ARNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 64EB2A38293E0D2100106C5D /* ARNavigation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		64EB2A33293E03B200106C5D /* Embed Frameworks */ = {
+		64AFCCC6299BE4030085CF80 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				64EB2A32293E03B200106C5D /* VisionLib.xcframework in Embed Frameworks */,
+				64AFCCC5299BE4030085CF80 /* VisionLib.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,7 +56,7 @@
 		64AFCCBE299B8E330085CF80 /* CarDistance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarDistance.m; sourceTree = "<group>"; };
 		64AFCCC0299BB0120085CF80 /* TailgatingWarning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TailgatingWarning.m; sourceTree = "<group>"; };
 		64AFCCC1299BB0120085CF80 /* TailgatingWarning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TailgatingWarning.h; sourceTree = "<group>"; };
-		64EB2A30293E03B200106C5D /* VisionLib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = VisionLib.xcframework; path = "../../build/VisionLib-ios-0.0.1/VisionLib.xcframework"; sourceTree = "<group>"; };
+		64AFCCC3299BE4020085CF80 /* VisionLib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = VisionLib.xcframework; path = Libs/VisionLib.xcframework; sourceTree = "<group>"; };
 		64EB2A34293E060900106C5D /* LicensePlates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LicensePlates.h; sourceTree = "<group>"; };
 		64EB2A35293E060900106C5D /* LicensePlates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LicensePlates.m; sourceTree = "<group>"; };
 		64EB2A37293E0D2100106C5D /* ARNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARNavigation.h; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64EB2A31293E03B200106C5D /* VisionLib.xcframework in Frameworks */,
+				64AFCCC4299BE4030085CF80 /* VisionLib.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +78,7 @@
 		1594C63B233CEDFE0015B7EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				64EB2A30293E03B200106C5D /* VisionLib.xcframework */,
+				64AFCCC3299BE4020085CF80 /* VisionLib.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -138,7 +138,7 @@
 				159BB54C21F238E800657492 /* Sources */,
 				159BB54D21F238E800657492 /* Frameworks */,
 				159BB54E21F238E800657492 /* Resources */,
-				64EB2A33293E03B200106C5D /* Embed Frameworks */,
+				64AFCCC6299BE4030085CF80 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
