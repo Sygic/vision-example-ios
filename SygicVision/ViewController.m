@@ -92,10 +92,36 @@
     
     [[SYVisionLogic sharedVisionLogic] setDelegate:tailgatingWarning];
     
+    [self setupAndStartVision];
+}
+
+-(void)setupAndStartVision
+{
     //Vision init and camera start
     NSError* error = nil;
     [[SYVision sharedVision] initializeWithClientId:@"YOUR_CLIENT_ID" licenseKey:@"YOUR_LICENSE_KEY" error:&error];
     [[SYVision sharedVision] setDelegate:self];
+    
+    //Setup vehicle detection
+    [[SYVision sharedVision] config].object.active = true;
+    [[SYVision sharedVision] config].object.performance.mode = SYVisionModeFixed;
+    [[SYVision sharedVision] config].object.performance.rate = SYVisionRateHigh;
+    
+    //Setup sign detection
+    [[SYVision sharedVision] config].sign.active = true;
+    [[SYVision sharedVision] config].sign.performance.mode = SYVisionModeFixed;
+    [[SYVision sharedVision] config].sign.performance.rate = SYVisionRateHigh;
+    [[SYVision sharedVision] config].sign.ignoreSignsOnCars = YES;
+    
+    //Setup road and lane detection
+    [[SYVision sharedVision] config].road.active = true;
+    [[SYVision sharedVision] config].lane.active = true;
+    [[SYVision sharedVision] config].road.performance.mode = SYVisionModeFixed;
+    [[SYVision sharedVision] config].road.performance.rate = SYVisionRateHigh;
+    [[SYVision sharedVision] config].lane.performance.mode = SYVisionModeFixed;
+    [[SYVision sharedVision] config].lane.performance.rate = SYVisionRateHigh;
+    [[SYVision sharedVision] config].lane.pauseWhenNotMoving = NO;
+    
     [[SYVision sharedVision] startCamera:self view:previewLayer debugView:nil];
 }
 
